@@ -1,0 +1,66 @@
+<html>
+<head>
+    <title> JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>  
+ 
+
+   
+<center>
+<div class='container'>
+ 
+     
+<input  type="button" value="Select" onclick="selectionnertexte()"/> 
+<input  type="button" value=" la taille du texte"onclick="tailletexte()"/> 
+<input  type="button" value="I"onclick="italique()"/> 
+<input  type="button" value="G"onclick="gras()"/> 
+<input  type="button" value="S"onclick="souligne()"> 
+<input  type="button" value="Supp" onclick="effacer()"/>
+<select id="fontSize">
+        <option value='12'>12</option>
+        <option value='14'>14</option>
+        <option value='16'>16</option>
+        <option value='18'>18</option>
+        <option value='20'>20</option>
+        <option value='22'>22</option>
+        <option value='24'>24</option>
+        <option value='26'>26</option>
+      </select>
+      <select onchange="fontfamily(this);" size="13">
+            <option>Georgia</option>
+            <option>Palatino Linotype</option>
+            <option>Book Antiqua</option>
+            <option>Times New Roman</option>
+            <option>Arial</option>
+            <option>Helvetica</option>
+            <option>Arial Black</option>
+            <option>Impact</option>
+            <option>Lucida Sans Unicode</option>
+            <option>Tahoma</option>
+            <option>Verdana</option>
+            <option>Courier New</option>
+            <option>Lucida Console</option>
+          </select>
+          <select onchange="fontcolor(this);" size="13">
+            <option value="purple">purple</option>
+            <option value="green">green</option>  
+            <option value="Black">Black</option>
+            <option value="pink">pink</option>
+            <option value="skyblue">skyblue</option>
+            <option value="grey">grey</option>
+            <option value="red">red</option>
+         </select>
+
+
+<br><br>
+
+<p>Texte à modifier : <textarea id="texte" ></textarea> </p>
+
+</div>
+</center>
+<script type="text/javascript" src="js/main.js">
+    </script> 
+ 
+</body>
+</html>
+
